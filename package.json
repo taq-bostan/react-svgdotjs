@@ -1,7 +1,7 @@
 {
   "name": "react-svgdotjs",
-  "version": "0.0.11",
-  "description": "",
+  "version": "0.0.12",
+  "description": "A lightweight component to use SVG.js library in React. Custom hooks are provided for automatically re-rendering when the underlying data changes.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "taq-bostan",
