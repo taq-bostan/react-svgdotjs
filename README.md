@@ -70,9 +70,9 @@ const clickHandler = () => {
 
 ## Custom hooks
 
-You are already all done! You can use `onload` and `svgUpdate` to leverage the functionalities of <a href="https://svgjs.dev/docs/3.0/">SVG.js</a>. However, a challenge arises when employing React state management and lifecycle methods, as the `onload` behavior prevents the svg from benefiting from seamless re-rendering after data modifications. To address this limitation, there are custom hooks provided to facilitate automatic re-rendering when the underlying data changes.
+The `onload` behavior prevents SVG from benefiting from seamless re-rendering when the underlying data changes. The custom hooks are provided to address this problem.
 
-To use the custom hooks, ensure to add `ref` to `SvgContainer` (mentioned [earlier](#on-demand-changes)). Then you may utilize these custom hooks once or more:
+To use the custom hooks, ensure to add `ref` to `SvgContainer` (mentioned [earlier](#on-demand-changes)). Then you may utilize these custom hooks one or more times:
 
 ### useSvg
 
@@ -123,6 +123,15 @@ useSvgWithCleanup(svgContainer, svg => {
 ```
 
 Within a component, you are allowed to include multiple `useSvgWithCleanup`s, each with its own set of dependencies.
+
+## Contributing
+
+- Fork the project.
+- Make changes.
+- Run the project in development mode: `npm run ladle`.
+- Test your changes using `svg-container.stories.tsx` or your own Stories (`*.stories.tsx`).
+- Update README with appropriate docs.
+- Commit and PR
 
 ## Dependencies
 
