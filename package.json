@@ -1,6 +1,6 @@
 {
   "name": "react-svgdotjs",
-  "version": "0.0.12",
+  "version": "0.0.16",
   "description": "A lightweight component to use SVG.js library in React. Custom hooks are provided for automatically re-rendering when the underlying data changes.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "ladle": "ladle serve",
-    "build": "tsup",
+    "build": "tsup --dts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

@@ -118,7 +118,7 @@ useSvgWithCleanup(svgContainer, svg => {
     let _img = svg.image(img, ev => {
         svg.size(500, 600);
     });
-    return svg => { _img.remove(); }
+    return svg => { svg.clear(); }
 }, [img]);
 ```
 
